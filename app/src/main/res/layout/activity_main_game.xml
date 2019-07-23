@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ali.firstapplication.Main_game"
+    android:background="#213502">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MainGame_linearLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/gold1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:id="@+id/txt_gold_num"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/game_time"
+                android:layout_weight="1"
+                android:layout_marginRight="12dp"
+                android:text="60"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/showPopupBtn"
+                android:src="@drawable/menu_bar"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/img_question"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".4"
+            android:src="@drawable/image"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="----- -----"
+            android:id="@+id/txt_word"
+            android:longClickable="false"
+            android:typeface="monospace"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textIsSelectable="false"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="ض"
+                    android:id="@+id/txt_1"
+                    style="@style/LetterButton"
+                    android:typeface="monospace"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:tag="ض"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ص"
+                    android:id="@+id/txt_2"
+                    android:typeface="monospace"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:tag="ص"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ث"
+                    android:id="@+id/txt_3"
+                    android:typeface="monospace"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:tag="ث"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ق"
+                    android:id="@+id/txt_4"
+                    android:typeface="monospace"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:tag="ق"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ف"
+                    android:id="@+id/txt_5"
+                    android:typeface="monospace"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:tag="ف"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="غ"
+                    android:id="@+id/txt_6"
+                    android:typeface="monospace"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:tag="غ"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ع"
+                    android:id="@+id/txt_7"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ع"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ه"
+                    android:id="@+id/txt_8"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ه"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="خ"
+                    android:id="@+id/txt_9"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="خ"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ح"
+                    android:id="@+id/txt_10"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ح"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ج"
+                    android:id="@+id/txt_11"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ج"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="چ"
+                    android:id="@+id/txt_12"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="چ"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="پ"
+                    android:id="@+id/txt_13"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="پ"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ش"
+                    android:id="@+id/txt_14"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ش"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="س"
+                    android:id="@+id/txt_15"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="س"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ی"
+                    android:id="@+id/txt_16"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ی"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ب"
+                    android:id="@+id/txt_17"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ب"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ل"
+                    android:id="@+id/txt_18"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ل"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ا"
+                    android:id="@+id/txt_19"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ا"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ت"
+                    android:id="@+id/txt_20"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ت"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ن"
+                    android:id="@+id/txt_21"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ن"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="م"
+                    android:id="@+id/txt_22"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="م"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ک"
+                    android:id="@+id/txt_23"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ک"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="گ"
+                    android:id="@+id/txt_24"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="گ"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ظ"
+                    android:id="@+id/txt_25"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ظ"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ط"
+                    android:id="@+id/txt_26"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ط"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ز"
+                    android:id="@+id/txt_27"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ز"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ر"
+                    android:id="@+id/txt_28"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ر"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ذ"
+                    android:id="@+id/txt_29"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ذ"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="ژ"
+                    android:id="@+id/txt_33"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="ژ"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="د"
+                    android:id="@+id/txt_30"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="د"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="و"
+                    android:id="@+id/txt_31"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="و"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:text="آ"
+                    android:id="@+id/txt_32"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:tag="آ"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:id="@+id/textView47"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:id="@+id/textView48"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    style="@style/LetterButton"
+                    android:id="@+id/textView49"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:typeface="monospace"
+                    android:layout_weight="1"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

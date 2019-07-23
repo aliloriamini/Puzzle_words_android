@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ali.firstapplication.result"
+    android:background="#213502">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="باختی"
+            android:id="@+id/result_show"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".7"
+            android:visibility="invisible"
+            android:id="@+id/coin_result">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imageView3"
+                android:layout_weight=".7"
+                android:src="@drawable/gold1"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="+25"
+                android:id="@+id/textView13"
+                android:layout_weight=".3"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="تکرار مجدد"
+                android:id="@+id/try_again"
+                android:background="#7ea00e"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_weight=".4"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView12"
+                android:layout_weight=".4"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="مرحله بعدی"
+                android:id="@+id/go_next_level"
+                android:background="#7ea00e"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_weight=".4"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
